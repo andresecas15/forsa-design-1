@@ -124,8 +124,9 @@ h1,h2,h3,h4{font-family:var(--font-primary);font-weight:700;color:var(--gray-700
 .ring-progress{animation:ringRotate 12s linear infinite;transform-origin:center}
 @keyframes ringRotate{to{transform:rotate(360deg)}}
 
-.hero-logo-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:160px;height:160px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:3px solid var(--gray-100);box-shadow:var(--shadow-lg);background:var(--white)}
-.hero-logo-center img{width:65%;height:auto;object-fit:contain}
+.hero-logo-center{display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.hero-logo-center img{width:200px;height:auto;object-fit:contain;filter:drop-shadow(0 4px 24px rgba(0,0,0,0.35))}
+.hero-logo-display{display:flex;align-items:center;justify-content:center;padding:20px;animation:orbitFloat 6s ease-in-out infinite}
 
 .orbit-item{position:absolute}
 .orbit-card{display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius);box-shadow:var(--shadow-md);animation:orbitFloat 4s ease-in-out infinite;white-space:nowrap}
