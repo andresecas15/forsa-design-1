@@ -64,18 +64,15 @@ h1,h2,h3,h4{font-family:var(--font-primary);font-weight:700;color:var(--gray-700
 @keyframes rotateGear{to{transform:rotate(360deg)}}
 
 /* ========== Navbar ========== */
-.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:var(--transition)}
-.navbar.scrolled{background:rgba(255,255,255,0.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--gray-100);padding:10px 0;box-shadow:var(--shadow-sm)}
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:12px 0;background:#ffffff;border-bottom:1px solid var(--gray-100);box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:var(--transition)}
+.navbar.scrolled{padding:10px 0;box-shadow:0 4px 20px rgba(0,0,0,0.09)}
 .nav-container{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{display:flex;align-items:center;gap:10px;z-index:1001}
-.nav-logo-img{width:auto;height:45px;object-fit:contain;filter:drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)}
-.nav-logo-text{font-family:var(--font-primary);font-size:1.4rem;font-weight:800;color:#ffffff;letter-spacing:1.5px}
+.nav-logo-img{width:auto;height:48px;object-fit:contain;filter:none}
+.nav-logo-text{font-family:var(--font-primary);font-size:1.4rem;font-weight:800;color:var(--navy);letter-spacing:1.5px}
 .nav-links{display:flex;align-items:center;gap:6px}
-.nav-link{padding:8px 14px;font-size:0.88rem;font-weight:500;color:rgba(255,255,255,0.85);border-radius:8px}
-.nav-link:hover,.nav-link.active{color:#ffffff}
-.navbar.scrolled .nav-link{color:var(--gray-500)}
-.navbar.scrolled .nav-link:hover,.navbar.scrolled .nav-link.active{color:var(--primary)}
-.navbar.scrolled .nav-logo-text{color:var(--navy)}
+.nav-link{padding:8px 14px;font-size:0.88rem;font-weight:500;color:var(--gray-500);border-radius:8px}
+.nav-link:hover,.nav-link.active{color:var(--primary)}
 .nav-cta{background:var(--primary);color:var(--white)!important;padding:10px 22px;border-radius:8px}
 .nav-cta:hover{background:var(--primary-dark);transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,84,164,0.25)}
 .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;z-index:1001}
