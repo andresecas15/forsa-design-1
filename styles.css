@@ -558,7 +558,7 @@ h4 {
 }
 
 .hero-logo-center{display:flex;align-items:center;justify-content:center;margin-bottom:8px}
-.hero-logo-center img{width:auto;height:220px;object-fit:contain;filter:brightness(0) invert(1) drop-shadow(0 4px 24px rgba(0,157,217,0.5))}
+.hero-logo-center img{width:auto;height:220px;object-fit:contain;filter:drop-shadow(0 4px 24px rgba(0,157,217,0.4))}
 
 .orbit-item {
     position: absolute
