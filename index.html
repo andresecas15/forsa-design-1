@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORSA — Cadena de Suministros & Logística Petrolera</title>
+    <meta name="description" content="FORSA: Soluciones integrales de cadena de suministros, logística y licitaciones para la industria petrolera en Venezuela.">
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Oil Drop SVGs floating -->
+    <div class="floating-shapes" aria-hidden="true">
+        <svg class="oil-drop drop-1" viewBox="0 0 61 80" fill="none"><path d="M30.5 0C30.5 0 0 40 0 55a30.5 30.5 0 1061 0C61 40 30.5 0 30.5 0z" fill="currentColor"/></svg>
+        <svg class="oil-drop drop-2" viewBox="0 0 61 80" fill="none"><path d="M30.5 0C30.5 0 0 40 0 55a30.5 30.5 0 1061 0C61 40 30.5 0 30.5 0z" fill="currentColor"/></svg>
+        <svg class="oil-drop drop-3" viewBox="0 0 61 80" fill="none"><path d="M30.5 0C30.5 0 0 40 0 55a30.5 30.5 0 1061 0C61 40 30.5 0 30.5 0z" fill="currentColor"/></svg>
+        <svg class="gear-shape gear-1" viewBox="0 0 100 100"><path d="M50 15a35 35 0 100 70 35 35 0 000-70zm0 55a20 20 0 110-40 20 20 0 010 40z" fill="currentColor"/><rect x="47" y="0" width="6" height="18" rx="3" fill="currentColor"/><rect x="47" y="82" width="6" height="18" rx="3" fill="currentColor"/><rect x="0" y="47" width="18" height="6" rx="3" fill="currentColor"/><rect x="82" y="47" width="18" height="6" rx="3" fill="currentColor"/><rect x="12" y="12" width="6" height="18" rx="3" fill="currentColor" transform="rotate(45 15 21)"/><rect x="73" y="70" width="6" height="18" rx="3" fill="currentColor" transform="rotate(45 76 79)"/><rect x="73" y="12" width="6" height="18" rx="3" fill="currentColor" transform="rotate(-45 76 21)"/><rect x="12" y="70" width="6" height="18" rx="3" fill="currentColor" transform="rotate(-45 15 79)"/></svg>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="forsa-logo.png" alt="FORSA" class="nav-logo-img">
+                <span class="nav-logo-text">FORSA</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active">Inicio</a>
+                <a href="#about" class="nav-link">Nosotros</a>
+                <a href="#services" class="nav-link">Servicios</a>
+                <a href="#video-section" class="nav-link">Visión</a>
+                <a href="#sectors" class="nav-link">Sectores</a>
+                <a href="#contact" class="nav-link nav-cta"><i class="fas fa-arrow-right"></i> Contáctenos</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section — Full screen with animated background -->
+    <section id="hero" class="hero">
+        <!-- Animated gradient mesh background -->
+        <div class="hero-mesh"></div>
+        <!-- Animated pipeline SVG -->
+        <svg class="hero-pipeline" viewBox="0 0 1400 800" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+                <linearGradient id="pipeGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="rgba(0,157,217,0.1)"/>
+                    <stop offset="50%" stop-color="rgba(0,157,217,0.3)"/>
+                    <stop offset="100%" stop-color="rgba(0,157,217,0.05)"/>
+                </linearGradient>
+                <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <path class="pipe-line pipe-1" d="M-50 400 Q200 200 400 350 T800 300 T1200 400 T1500 350" stroke="url(#pipeGrad)" stroke-width="3" fill="none" filter="url(#glow)"/>
+            <path class="pipe-line pipe-2" d="M-50 500 Q300 350 500 480 T900 420 T1300 500 T1500 450" stroke="url(#pipeGrad)" stroke-width="2" fill="none" opacity="0.5"/>
+            <circle class="pipe-dot dot-1" r="5" fill="#009DD9"><animateMotion dur="8s" repeatCount="indefinite" path="M-50 400 Q200 200 400 350 T800 300 T1200 400 T1500 350"/></circle>
+            <circle class="pipe-dot dot-2" r="4" fill="#009DD9" opacity="0.6"><animateMotion dur="10s" repeatCount="indefinite" path="M-50 500 Q300 350 500 480 T900 420 T1300 500 T1500 450"/></circle>
+        </svg>
+
+        <div class="hero-content">
+            <div class="hero-left" data-animate="fade-right">
+                <div class="hero-badge">
+                    <div class="badge-live"></div>
+                    <span>Presentes en Expoferia Petrolera 2026</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">FORSA</span>
+                    <span class="title-accent">
+                        <span class="title-accent-text">Solidez y Respuesta</span>
+                        <!-- Animated oil drop behind text -->
+                        <svg class="title-drop" viewBox="0 0 61 80" fill="none"><path d="M30.5 0C30.5 0 0 40 0 55a30.5 30.5 0 1061 0C61 40 30.5 0 30.5 0z" fill="url(#dropGrad)"/><defs><linearGradient id="dropGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(0,157,217,0.15)"/><stop offset="100%" stop-color="rgba(0,84,164,0.2)"/></linearGradient></defs></svg>
+                    </span>
+                    <span class="title-line">para la Industria Energética</span>
+                </h1>
+                <p class="hero-desc">Suministros industriales y servicios de soporte con estándares internacionales. Conectamos la procura global con la operación en campo en el oriente y occidente de Venezuela.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary"><span>Descargar Resumen Ejecutivo 2026</span><i class="fas fa-file-pdf"></i></a>
+                    <a href="#services" class="btn btn-glass"><i class="fas fa-book-open"></i><span>Ver Catálogo de Suministros</span></a>
+                </div>
+            </div>
+            <div class="hero-right" data-animate="fade-left">
+                <!-- Animated rotating ring with stats -->
+                <div class="hero-ring-container">
+                    <div class="hero-ring">
+                        <svg class="ring-svg" viewBox="0 0 300 300">
+                            <circle cx="150" cy="150" r="130" stroke="rgba(0,157,217,0.1)" stroke-width="2" fill="none"/>
+                            <circle cx="150" cy="150" r="130" stroke="rgba(0,157,217,0.5)" stroke-width="2.5" fill="none" stroke-dasharray="50 770" class="ring-progress"/>
+                            <circle cx="150" cy="150" r="110" stroke="rgba(0,84,164,0.08)" stroke-width="1" fill="none" stroke-dasharray="5 10"/>
+                        </svg>
+                    </div>
+                    <div class="hero-logo-center">
+                        <img src="forsa-logo.png" alt="FORSA Logo">
+                    </div>
+                    <div class="orbit-item orbit-1">
+                        <div class="orbit-card"><i class="fas fa-oil-well"></i><strong>150+</strong><small>Proyectos</small></div>
+                    </div>
+                    <div class="orbit-item orbit-2">
+                        <div class="orbit-card"><i class="fas fa-truck-fast"></i><strong>24/7</strong><small>Logística</small></div>
+                    </div>
+                    <div class="orbit-item orbit-3">
+                        <div class="orbit-card"><i class="fas fa-chart-line"></i><strong>98%</strong><small>Satisfacción</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave divider -->
+        <div class="wave-divider">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,70 1440,60 L1440,120 L0,120 Z" fill="#ffffff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual" data-animate="fade-right">
+                    <div class="about-img-frame">
+                        <img src="team.png" alt="Equipo FORSA" class="about-img">
+                        <div class="frame-accent"></div>
+                        <!-- Animated pipeline connector -->
+                        <svg class="about-connector" viewBox="0 0 200 300" aria-hidden="true">
+                            <path d="M100 0 L100 120 Q100 150 130 150 L200 150" stroke="rgba(0,157,217,0.3)" stroke-width="2" fill="none" stroke-dasharray="8 4" class="connector-anim"/>
+                            <circle r="4" fill="#009DD9"><animateMotion dur="3s" repeatCount="indefinite" path="M100 0 L100 120 Q100 150 130 150 L200 150"/></circle>
+                        </svg>
+                    </div>
+                    <div class="about-years-badge">
+                        <span class="years-num" data-count="15">0</span>
+                        <span class="years-label">Años de<br>Experiencia</span>
+                    </div>
+                </div>
+                <div class="about-text" data-animate="fade-left">
+                    <span class="overline"><i class="fas fa-building"></i> Quiénes Somos</span>
+                    <h2>Su aliado estratégico en la <span class="gradient-text">industria petrolera</span></h2>
+                    <p><strong>Misión:</strong> Contribuir al desarrollo de la región mediante el suministro de bienes y servicios al sector petrolero e industrial con altos estándares de calidad.</p>
+                    <p><strong>Visión:</strong> Permanecer en el mercado petrolero reconocida como empresa de profesionalismo, responsabilidad, calidad y seguridad para aumentar el valor de los clientes y de la empresa.</p>
+                    <div class="about-features">
+                        <div class="about-feat">
+                            <div class="feat-icon"><i class="fas fa-check-double"></i></div>
+                            <div><h4>Cumplimiento Total</h4><p>Normas API, ASME y estándares PDVSA</p></div>
+                        </div>
+                        <div class="about-feat">
+                            <div class="feat-icon"><i class="fas fa-truck-fast"></i></div>
+                            <div><h4>Logística Especializada</h4><p>Carga pesada y materiales peligrosos</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Wave transition -->
+        <div class="wave-divider wave-inverted">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+                <path d="M0,40 C480,80 960,0 1440,40 L1440,80 L0,80 Z" fill="#edf1f7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="overline"><i class="fas fa-cogs"></i> Servicios</span>
+                <h2>Soluciones <span class="gradient-text">End-to-End</span> para la Industria</h2>
+                <p class="section-desc">Portafolio integral de servicios especializados para la cadena de suministros petrolera.</p>
+            </div>
+            <div class="services-carousel" id="servicesCarousel" style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                <div class="svc-card" data-animate="fade-up" data-delay="0" style="flex: 1; min-width: 300px; max-width: 380px;">
+                    <div class="svc-icon-wrap">
+                        <svg class="svc-bg-shape" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" stroke="rgba(0,157,217,0.15)" stroke-width="1" fill="none" stroke-dasharray="4 4"/></svg>
+                        <i class="fas fa-gears"></i>
+                    </div>
+                    <h3>Suministros MRO</h3>
+                    <p>Procura especializada de materiales de mantenimiento, electricidad y ferretería industrial de alto desempeño.</p>
+                    <div class="svc-hover-line"></div>
+                </div>
+                <div class="svc-card featured" data-animate="fade-up" data-delay="80" style="flex: 1; min-width: 300px; max-width: 380px;">
+                    <div class="svc-ribbon">★ Principal</div>
+                    <div class="svc-icon-wrap">
+                        <svg class="svc-bg-shape" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" stroke="rgba(0,157,217,0.15)" stroke-width="1" fill="none" stroke-dasharray="4 4"/></svg>
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Logística Internacional</h3>
+                    <p>Gestión eficiente de carga desde los proveedores técnicamente seleccionados hasta los centros de recepción de materiales industriales.</p>
+                    <div class="svc-hover-line"></div>
+                </div>
+                <div class="svc-card" data-animate="fade-up" data-delay="160" style="flex: 1; min-width: 300px; max-width: 380px;">
+                    <div class="svc-icon-wrap">
+                        <svg class="svc-bg-shape" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" stroke="rgba(0,157,217,0.15)" stroke-width="1" fill="none" stroke-dasharray="4 4"/></svg>
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>HSE y Calidad</h3>
+                    <p>Equipos de protección y consumibles certificados bajo normas ISO y estándares de seguridad petrolera.</p>
+                    <div class="svc-hover-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video / Vision Section -->
+    <section id="video-section" class="section video-section">
+        <div class="video-bg">
+            <!-- Animated SVG oil rig silhouette -->
+            <svg class="oil-rig-svg" viewBox="0 0 400 500" aria-hidden="true">
+                <g fill="none" stroke="rgba(0,157,217,0.12)" stroke-width="1.5">
+                    <rect x="170" y="100" width="60" height="350" rx="4"/>
+                    <polygon points="200,20 140,100 260,100"/>
+                    <line x1="200" y1="20" x2="200" y2="100"/>
+                    <rect x="150" y="200" width="100" height="40" rx="4"/>
+                    <rect x="140" y="300" width="120" height="30" rx="4"/>
+                    <line x1="120" y1="450" x2="280" y2="450"/>
+                    <line x1="130" y1="100" x2="130" y2="450"/>
+                    <line x1="270" y1="100" x2="270" y2="450"/>
+                    <circle cx="200" cy="220" r="12" stroke="rgba(0,157,217,0.25)" stroke-width="2"/>
+                    <!-- Animated pump -->
+                    <line x1="200" y1="208" x2="200" y2="232" stroke="rgba(0,157,217,0.4)" stroke-width="2" class="pump-anim"/>
+                </g>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="video-content" data-animate="fade-up">
+                <span class="overline light"><i class="fas fa-eye"></i> Nuestra Visión</span>
+                <h2>Conectamos la <span class="gradient-text-light">energía</span> con la <span class="gradient-text-light">eficiencia</span></h2>
+                <p>Nuestra misión es ser el puente entre los operadores petroleros y las soluciones logísticas de clase mundial. Creamos valor en cada eslabón de la cadena.</p>
+                <!-- Embedded Video -->
+                <div class="video-embed vertical">
+                    <video src="design4/Video_con_Logo_Forsa.mp4" autoplay muted loop playsinline></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats with animated rings -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-ring-card" data-animate="fade-up" data-delay="0">
+                    <div class="stat-ring-svg">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="52" stroke="rgba(0,157,217,0.1)" stroke-width="4" fill="none"/>
+                            <circle cx="60" cy="60" r="52" stroke="#009DD9" stroke-width="4" fill="none" stroke-dasharray="327" stroke-dashoffset="327" stroke-linecap="round" class="stat-progress" data-percent="95"/>
+                        </svg>
+                        <div class="stat-ring-val"><span data-count="150">0</span>+</div>
+                    </div>
+                    <div class="stat-label">Proyectos Ejecutados</div>
+                </div>
+                <div class="stat-ring-card" data-animate="fade-up" data-delay="100">
+                    <div class="stat-ring-svg">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="52" stroke="rgba(0,157,217,0.1)" stroke-width="4" fill="none"/>
+                            <circle cx="60" cy="60" r="52" stroke="#0054A4" stroke-width="4" fill="none" stroke-dasharray="327" stroke-dashoffset="327" stroke-linecap="round" class="stat-progress" data-percent="70"/>
+                        </svg>
+                        <div class="stat-ring-val"><span data-count="50">0</span>+</div>
+                    </div>
+                    <div class="stat-label">Clientes Petroleros</div>
+                </div>
+                <div class="stat-ring-card" data-animate="fade-up" data-delay="200">
+                    <div class="stat-ring-svg">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="52" stroke="rgba(0,157,217,0.1)" stroke-width="4" fill="none"/>
+                            <circle cx="60" cy="60" r="52" stroke="#009DD9" stroke-width="4" fill="none" stroke-dasharray="327" stroke-dashoffset="327" stroke-linecap="round" class="stat-progress" data-percent="85"/>
+                        </svg>
+                        <div class="stat-ring-val"><span data-count="200">0</span>+</div>
+                    </div>
+                    <div class="stat-label">Profesionales</div>
+                </div>
+                <div class="stat-ring-card" data-animate="fade-up" data-delay="300">
+                    <div class="stat-ring-svg">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="52" stroke="rgba(0,157,217,0.1)" stroke-width="4" fill="none"/>
+                            <circle cx="60" cy="60" r="52" stroke="#0054A4" stroke-width="4" fill="none" stroke-dasharray="327" stroke-dashoffset="327" stroke-linecap="round" class="stat-progress" data-percent="98"/>
+                        </svg>
+                        <div class="stat-ring-val"><span data-count="98">0</span>%</div>
+                    </div>
+                    <div class="stat-label">Satisfacción del Cliente</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors — Animated marquee -->
+    <section id="sectors" class="section sectors-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="overline"><i class="fas fa-industry"></i> Sectores</span>
+                <h2>Industrias que <span class="gradient-text">atendemos</span></h2>
+            </div>
+        </div>
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <div class="marquee-item"><i class="fas fa-oil-well"></i><span>UPSTREAM</span></div>
+                <div class="marquee-item"><i class="fas fa-arrows-split-up-and-left"></i><span>MIDSTREAM</span></div>
+                <div class="marquee-item"><i class="fas fa-flask"></i><span>DOWNSTREAM</span></div>
+                <div class="marquee-item"><i class="fas fa-bolt"></i><span>GAS NATURAL</span></div>
+                <div class="marquee-item"><i class="fas fa-hard-hat"></i><span>PETROQUÍMICA</span></div>
+                <div class="marquee-item"><i class="fas fa-leaf"></i><span>RENOVABLE</span></div>
+                <!-- Duplicate for infinite scroll -->
+                <div class="marquee-item"><i class="fas fa-oil-well"></i><span>UPSTREAM</span></div>
+                <div class="marquee-item"><i class="fas fa-arrows-split-up-and-left"></i><span>MIDSTREAM</span></div>
+                <div class="marquee-item"><i class="fas fa-flask"></i><span>DOWNSTREAM</span></div>
+                <div class="marquee-item"><i class="fas fa-bolt"></i><span>GAS NATURAL</span></div>
+                <div class="marquee-item"><i class="fas fa-hard-hat"></i><span>PETROQUÍMICA</span></div>
+                <div class="marquee-item"><i class="fas fa-leaf"></i><span>RENOVABLE</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciador -->
+    <section class="diferenciador-section" style="background-color: #001a33; color: white; padding: 60px 0; text-align: center; position: relative;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto; line-height: 1.8; font-weight: 500;">"En FORSA, entendemos que la continuidad operativa es lo primordial. Nuestra estructura está diseñada para reducir los tiempos de inactividad mediante una gestión de suministros transparente, trazable y ágil."</p>
+        </div>
+    </section>
+
+    <!-- Mapa de Operaciones -->
+    <section class="mapa-section" style="padding: 80px 0; background-color: #f8fafc; text-align: center; border-bottom: 1px solid #e2e8f0;">
+        <div class="container">
+            <span class="overline"><i class="fas fa-map-marked-alt"></i> Presencia Global</span>
+            <h2>Nuestras <span class="gradient-text">Operaciones</span></h2>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 50px; flex-wrap: wrap;">
+                <div style="text-align: center; background: white; padding: 25px 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <i class="fas fa-building" style="font-size: 2.5rem; color: #0054A4; margin-bottom: 15px;"></i>
+                    <h3 style="margin: 0; font-size: 1.4rem;">Houston</h3>
+                    <p style="color: #64748b; font-size: 0.95rem; margin-top: 5px;">Sede Global</p>
+                </div>
+                <div style="height: 3px; width: 60px; background: rgba(0,157,217,0.3); border-radius: 2px;" class="map-line"></div>
+                <div style="text-align: center; background: white; padding: 25px 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 2px solid #009DD9;">
+                    <i class="fas fa-oil-well" style="font-size: 2.5rem; color: #009DD9; margin-bottom: 15px;"></i>
+                    <h3 style="margin: 0; font-size: 1.4rem;">Maracaibo</h3>
+                    <p style="color: #64748b; font-size: 0.95rem; margin-top: 5px;">Occidente</p>
+                </div>
+                <div style="height: 3px; width: 60px; background: rgba(0,157,217,0.3); border-radius: 2px;" class="map-line"></div>
+                <div style="text-align: center; background: white; padding: 25px 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <i class="fas fa-industry" style="font-size: 2.5rem; color: #0054A4; margin-bottom: 15px;"></i>
+                    <h3 style="margin: 0; font-size: 1.4rem;">Barcelona</h3>
+                    <p style="color: #64748b; font-size: 0.95rem; margin-top: 5px;">Oriente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card" data-animate="fade-up">
+                <div class="cta-bg-shape"></div>
+                <h2>¿Tiene un proyecto o licitación próxima?</h2>
+                <p>Permítanos ser su socio estratégico. Experiencia, capacidad y compromiso al servicio de su operación.</p>
+                <a href="#contact" class="btn btn-primary btn-lg"><span>Iniciar Conversación</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <span class="overline"><i class="fas fa-envelope"></i> Contacto</span>
+                    <h2>Trabajemos <span class="gradient-text">juntos</span></h2>
+                    <p>Estamos listos para atender sus requerimientos de cadena de suministros y logística petrolera.</p>
+                    <div class="contact-list">
+                        <div class="contact-item"><div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div><div><strong>Oficina Principal</strong><span>Caracas, Venezuela</span></div></div>
+                        <div class="contact-item"><div class="ci-icon"><i class="fas fa-phone"></i></div><div><strong>Teléfono</strong><span>+58 (212) 000-0000</span></div></div>
+                        <div class="contact-item"><div class="ci-icon"><i class="fas fa-envelope"></i></div><div><strong>Email</strong><span>atencion@forsa.com.ve</span></div></div>
+                    </div>
+                    <div class="social-row">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" data-animate="fade-left">
+                    <h3>Solicitar Información</h3>
+                    <div class="form-row"><div class="fg"><label>Nombre</label><input type="text" id="name" placeholder="Su nombre" required></div><div class="fg"><label>Empresa</label><input type="text" id="company" placeholder="Empresa"></div></div>
+                    <div class="form-row"><div class="fg"><label>Email</label><input type="email" id="email" placeholder="su@email.com" required></div><div class="fg"><label>Teléfono</label><input type="tel" id="phone" placeholder="+58 000-0000"></div></div>
+                    <div class="fg"><label>Servicio</label><select id="service"><option value="">Seleccione...</option><option>Licitaciones & Procura</option><option>Almacenamiento & Inventario</option><option>Logística & Expediting</option><option>Gestión de Activos</option><option>Inspección & Calidad</option><option>Consultoría</option></select></div>
+                    <div class="fg"><label>Mensaje</label><textarea id="message" rows="4" placeholder="Describa su requerimiento..." required></textarea></div>
+                    <button type="submit" class="btn btn-primary btn-full"><span>Enviar Mensaje</span><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand"><img src="forsa-logo.png" alt="FORSA" class="ft-logo"><p>Fuerza, Petróleo y Energía para la Nueva Era Industrial.</p></div>
+                <div class="footer-col"><h4>Enlaces Rápidos</h4><ul><li><a href="#services">Servicios</a></li><li><a href="#services">Procura</a></li><li><a href="#contact">Contacto</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 FORSA. Todos los derechos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
