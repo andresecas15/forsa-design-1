@@ -98,19 +98,51 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form submission
+    // Form submission — sends to mailer.php
     const form = document.getElementById('contactForm');
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async e => {
         e.preventDefault();
         const btn = form.querySelector('button[type="submit"]');
         const orig = btn.innerHTML;
+
         btn.innerHTML = '<span>Enviando...</span><i class="fas fa-spinner fa-spin"></i>';
         btn.disabled = true;
-        setTimeout(() => {
-            btn.innerHTML = '<span>¡Enviado!</span><i class="fas fa-check"></i>';
-            btn.style.background = '#009DD9'; btn.style.color = '#fff';
-            setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; btn.style.color = ''; btn.disabled = false; form.reset(); }, 3000);
-        }, 1500);
+
+        const data = new FormData();
+        data.append('nombre',   document.getElementById('name').value);
+        data.append('empresa',  document.getElementById('company').value);
+        data.append('email',    document.getElementById('email').value);
+        data.append('telefono', document.getElementById('phone').value);
+        data.append('servicio', document.getElementById('service').value);
+        data.append('mensaje',  document.getElementById('message').value);
+
+        try {
+            const res  = await fetch('mailer.php', { method: 'POST', body: data });
+            const json = await res.json();
+
+            if (json.success) {
+                btn.innerHTML = '<span>¡Enviado!</span><i class="fas fa-check"></i>';
+                btn.style.background = '#009DD9';
+                btn.style.color = '#fff';
+                setTimeout(() => {
+                    btn.innerHTML = orig;
+                    btn.style.background = '';
+                    btn.style.color = '';
+                    btn.disabled = false;
+                    form.reset();
+                }, 3000);
+            } else {
+                btn.innerHTML = '<span>Error. Intente de nuevo.</span><i class="fas fa-times"></i>';
+                btn.style.background = '#e53e3e';
+                btn.style.color = '#fff';
+                setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; btn.style.color = ''; btn.disabled = false; }, 3000);
+            }
+        } catch (err) {
+            btn.innerHTML = '<span>Error de conexión.</span><i class="fas fa-times"></i>';
+            btn.style.background = '#e53e3e';
+            btn.style.color = '#fff';
+            setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; btn.style.color = ''; btn.disabled = false; }, 3000);
+        }
     });
 
     // Parallax hero elements
