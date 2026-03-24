@@ -1388,7 +1388,7 @@ h4 {
 
 /* Footer */
 .footer {
-    background: #0f141a;
+    background: #1b1c3b;
     padding: 50px 0 0
 }
 
@@ -1453,7 +1453,7 @@ h4 {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    background: #141b27;
+    background: #12132a;
     margin-top: 0;
     border-top: 1px solid rgba(0,157,217,0.1)
 }
