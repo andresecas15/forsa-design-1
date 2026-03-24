@@ -337,7 +337,7 @@ h4 {
     overflow: hidden;
     display: flex;
     align-items: center;
-    background: linear-gradient(160deg, rgba(10, 22, 40, 0.88) 0%, rgba(0, 84, 164, 0.7) 50%, rgba(0, 47, 108, 0.88) 100%), url('hero-bg-new.jpeg') center/cover no-repeat
+    background: linear-gradient(160deg, rgba(8, 14, 22, 0.92) 0%, rgba(30, 42, 58, 0.78) 50%, rgba(10, 18, 32, 0.93) 100%), url('hero-bg-new.jpeg') center/cover no-repeat
 }
 
 .hero-mesh {
@@ -558,7 +558,7 @@ h4 {
 }
 
 .hero-logo-center{display:flex;align-items:center;justify-content:center;margin-bottom:8px}
-.hero-logo-center img{width:auto;height:220px;object-fit:contain;filter:drop-shadow(0 4px 24px rgba(0,157,217,0.4))}
+.hero-logo-center img{width:auto;height:220px;object-fit:contain;filter:drop-shadow(0 6px 32px rgba(255,255,255,0.18)) drop-shadow(0 2px 12px rgba(0,0,0,0.55))}
 
 .orbit-item {
     position: absolute
