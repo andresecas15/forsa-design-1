@@ -1406,7 +1406,6 @@ h4 {
     height: auto;
     object-fit: contain;
     margin-bottom: 14px;
-    filter: brightness(0) invert(1)
 }
 
 .footer-brand p {
@@ -1454,7 +1453,7 @@ h4 {
     padding: 24px 0;
     margin-top: 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.2);
+    background: transparent;
     text-align: center
 }
 
