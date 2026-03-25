@@ -986,13 +986,45 @@ h4 {
 }
 
 .video-embed {
+    flex: 1;
     position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    border-radius: var(--radius-lg);
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-    border: 2px solid rgba(0, 157, 217, 0.2)
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    background: #0a0e14
+}
+
+.video-embed.full-width-vid {
+    flex: none;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.mv-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.mv-col h2 {
+    font-size: 2.2rem;
+    color: var(--white);
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.mv-col p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 .video-embed.vertical {
@@ -1558,5 +1590,20 @@ h4 {
 
     .oil-rig-svg {
         display: none
+    }
+
+    .mv-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .mv-col h2 {
+        font-size: 1.8rem;
+    }
+    
+    .video-embed.full-width-vid {
+        aspect-ratio: 16/10;
+        margin-top: 20px !important;
     }
 }
