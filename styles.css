@@ -1405,8 +1405,7 @@ h4 {
     width: 140px;
     height: auto;
     object-fit: contain;
-    margin-bottom: 14px;
-    mix-blend-mode: screen
+    margin-bottom: 14px
 }
 
 .footer-brand p {
