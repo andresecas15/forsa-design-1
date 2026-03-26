@@ -1500,6 +1500,15 @@ h4 {
 }
 
 /* Team Collage */
+.collage-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.collage-arrow {
+    display: none; /* Hidden on desktop */
+}
+
 .collage-grid {
     display: flex;
     flex-wrap: wrap;
@@ -1519,6 +1528,58 @@ h4 {
     transform: scale(1.03);
     box-shadow: var(--shadow-md);
     z-index: 2;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .collage-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .collage-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--primary);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 10;
+        cursor: pointer;
+        box-shadow: var(--shadow-md);
+    }
+    .collage-arrow.prev-arrow { left: -10px; }
+    .collage-arrow.next-arrow { right: -10px; }
+    
+    .collage-grid {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        padding-bottom: 10px; /* space for scrollbar */
+        /* Hide scrollbar */
+        scrollbar-width: none; 
+    }
+    .collage-grid::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .collage-grid img {
+        flex: 0 0 85%;
+        max-width: 85%;
+        height: 250px;
+        scroll-snap-align: center;
+        border-radius: 16px;
+    }
+    .collage-grid img:hover {
+        transform: none; /* Disable hover scale on mobile to prevent clipping */
+    }
 }
 
 /* Animations */

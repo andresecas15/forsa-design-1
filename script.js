@@ -155,4 +155,19 @@ document.addEventListener('DOMContentLoaded', () => {
             heroRight.style.transform = `translateY(${s * 0.08}px)`;
         }
     }, { passive: true });
+
+    // Team Collage Mobile Arrow Controls
+    const collageGrid = document.querySelector('.collage-grid');
+    const prevArrow = document.querySelector('.prev-arrow');
+    const nextArrow = document.querySelector('.next-arrow');
+    
+    if (collageGrid && prevArrow && nextArrow) {
+        prevArrow.addEventListener('click', () => {
+            // Scroll by approximately the width of one image + gap
+            collageGrid.scrollBy({ left: -260, behavior: 'smooth' });
+        });
+        nextArrow.addEventListener('click', () => {
+            collageGrid.scrollBy({ left: 260, behavior: 'smooth' });
+        });
+    }
 });
