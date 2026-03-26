@@ -51,8 +51,11 @@
                 <a href="#hero" class="nav-link active">Inicio</a>
                 <a href="#about" class="nav-link">Nosotros</a>
                 <a href="#services" class="nav-link">Servicios</a>
-                <a href="#video-section" class="nav-link">Visión</a>
+                <a href="#vision-mission" class="nav-link">Visión</a>
                 <a href="#sectors" class="nav-link">Sectores</a>
+                <div class="nav-phone" style="display: flex; align-items: center; gap: 8px; color: var(--navy); font-weight: 600; margin-left: 20px;">
+                    <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.2rem;"></i> +58 414-6385875
+                </div>
                 <a href="#contact" class="nav-link nav-cta"><i class="fas fa-arrow-right"></i> Contáctenos</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Menú"><span></span><span></span><span></span></button>
@@ -95,9 +98,9 @@
 
         <div class="hero-content">
             <div class="hero-left" data-animate="fade-right">
-                <div class="hero-badge">
-                    <div class="badge-live"></div>
-                    <span>Presentes en Expoferia Petrolera 2026</span>
+                <div class="hero-badge" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 8px 16px;">
+                    <i class="fas fa-certificate" style="color: #5BC4F1; font-size: 1.1rem;"></i>
+                    <span style="font-size: 0.9rem; font-weight: 500;">Procesos en fase de homologación bajo estándares ISO 9001. Sistema de Gestión de Calidad en mantenimiento hacia FDIS ISO 9001:2026.</span>
                 </div>
                 <h1 class="hero-title">
                     <span class="title-line">FORSA</span>
@@ -186,6 +189,24 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- TeamForsa Collage -->
+            <div class="team-collage" data-animate="fade-up" style="margin-top: 60px;">
+                <h3 style="text-align: center; margin-bottom: 30px; font-size: 1.8rem; color: var(--navy);">Nuestro <span class="gradient-text">Equipo</span></h3>
+                <div class="collage-grid">
+                    <img src="TeamForsa/WhatsApp Image 2026-03-25 at 11.57.31 PM (1).jpeg" alt="Team FORSA" loading="lazy">
+                    <img src="TeamForsa/WhatsApp Image 2026-03-25 at 11.57.31 PM.jpeg" alt="Team FORSA" loading="lazy">
+                    <img src="TeamForsa/WhatsApp Image 2026-03-25 at 11.57.32 PM (1).jpeg" alt="Team FORSA" loading="lazy">
+                    <img src="TeamForsa/WhatsApp Image 2026-03-25 at 11.57.32 PM (2).jpeg" alt="Team FORSA" loading="lazy">
+                    <img src="TeamForsa/WhatsApp Image 2026-03-25 at 11.57.32 PM.jpeg" alt="Team FORSA" loading="lazy">
+                    <img src="TeamForsa/WhatsApp Image 2026-03-25 at 11.57.33 PM (1).jpeg" alt="Team FORSA" loading="lazy">
+                    <img src="TeamForsa/WhatsApp Image 2026-03-25 at 11.57.33 PM.jpeg" alt="Team FORSA" loading="lazy">
+                    <img src="TeamForsa/WhatsApp Image 2026-03-25 at 11.57.34 PM (1).jpeg" alt="Team FORSA" loading="lazy">
+                    <img src="TeamForsa/WhatsApp Image 2026-03-25 at 11.57.34 PM (2).jpeg" alt="Team FORSA" loading="lazy">
+                    <img src="TeamForsa/WhatsApp Image 2026-03-25 at 11.57.34 PM (3).jpeg" alt="Team FORSA" loading="lazy">
+                    <img src="TeamForsa/WhatsApp Image 2026-03-25 at 11.57.34 PM.jpeg" alt="Team FORSA" loading="lazy">
                 </div>
             </div>
         </div>
@@ -307,6 +328,19 @@
                         petrolera.</p>
                     <div class="svc-hover-line"></div>
                 </div>
+                <div class="svc-card" data-animate="fade-up" data-delay="240"
+                    style="flex: 1; min-width: 300px; max-width: 380px;">
+                    <div class="svc-icon-wrap">
+                        <svg class="svc-bg-shape" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" stroke="rgba(0,157,217,0.15)" stroke-width="1" fill="none"
+                                stroke-dasharray="4 4" />
+                        </svg>
+                        <i class="fas fa-truck-pickup"></i>
+                    </div>
+                    <h3>Gestión de Activos y Flota 4x4</h3>
+                    <p>Optimización y administración estratégica de recursos móviles para mantener su operatividad continua en campo.</p>
+                    <div class="svc-hover-line"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -413,10 +447,10 @@
                             <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div><strong>Oficina Principal</strong><span>Maracaibo, Venezuela</span></div>
                         </div>
-                        <div class="contact-item">
+                        <!-- <div class="contact-item">
                             <div class="ci-icon"><i class="fas fa-phone"></i></div>
-                            <div><strong>Teléfono</strong><span>+58 (212) 000-0000</span></div>
-                        </div>
+                            <div><strong>Teléfono</strong><span>+58 (261) 000-0000</span></div>
+                        </div> -->
                         <div class="contact-item">
                             <div class="ci-icon"><i class="fas fa-envelope"></i></div>
                             <div><strong>Email</strong><span>atencion@forsa.com.ve</span></div>
@@ -481,6 +515,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/584146385875" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>

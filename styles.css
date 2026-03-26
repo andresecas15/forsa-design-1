@@ -1473,6 +1473,54 @@ h4 {
     color: rgba(255, 255, 255, 0.35)
 }
 
+/* WhatsApp Float */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 34px;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    color: #FFF;
+}
+
+/* Team Collage */
+.collage-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.collage-grid img {
+    height: 180px;
+    flex-grow: 1;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    cursor: pointer;
+}
+.collage-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow-md);
+    z-index: 2;
+}
+
 /* Animations */
 [data-animate] {
     opacity: 0;
